@@ -105,7 +105,7 @@ const https = require("http");
 const port = 3000;
 
 const server = https.createServer(function (req, res) {
-  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
   const myJSON = JSON.stringify(video);
   res.write(myJSON);
   res.end();
