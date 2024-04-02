@@ -78,7 +78,7 @@ async function listFiles(authClient) {
     fields: "nextPageToken, files(*)",
   });
   const files = res.data.files;
-  console.log(files);
+  // console.log(files);
   if (files.length === 0) {
     console.log("No files found.");
     return;
